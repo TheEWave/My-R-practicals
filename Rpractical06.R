@@ -1,1 +1,9 @@
-bGlicmFyeShtb21lbnRzKQpzZXR3ZCgiRDovQlNDIElUIERPQ1gvU0VNRVNURVIgNC9DLk8uUy5UL1IgUHJhY3RpY2FsIikKZGYgPSByZWFkLmNzdigiU3R1ZGVudHNQZXJmb3JtYW5jZS5jc3YiLCBoZWFkZXIgPSBUKVsgLDY6OF0Kc2MxID0gZGYkbWF0aApza2V3bmVzcyhzYzEpCnNjMiA9IGRmJHJlYWRpbmcKc2tld25lc3Moc2MyKQpzYzMgPSBkZiR3cml0aW5nCnNrZXduZXNzKHNjMyk=
+library(moments)
+setwd("D:/BSC IT DOCX/SEMESTER 4/C.O.S.T/R Practical")
+df = read.csv("StudentsPerformance.csv", header = T)[ ,6:8]
+sc1 = df$math
+skewness(sc1)
+sc2 = df$reading
+skewness(sc2)
+sc3 = df$writing
+skewness(sc3)
