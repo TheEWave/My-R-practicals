@@ -1,1 +1,24 @@
-I2NyZWF0aW5nIGEgTWF0cml4CnggPC0gbWF0cml4KGRhdGEgPSBjKDEsMiwzLDQsNSwyKSwgbnJvdyA9IDMsIG5jb2wgPSAzKSAjYnlyb3cgPSBUUlVFKQp5IDwtIG1hdHJpeChkYXRhID0gYygyLDMsNCw5LDMsMSksIG5yb3cgPSAzLCBuY29sID0gMykKI2Rpc3BsYXlpbmcgdGhlIG1hdHJpeAp4CnkKI2FkZGl0aW9uCnogPSB4K3kKegojaW52ZXJzZQojZGV0ZXJtaW5hbnRzIG9mIG1hdHJpeCB4CmRldCh4KSAKI2RldGVybWluYW50cyBvZiBtYXRyaXggeQpkZXQoeSkKI2ludmVyc2Ugb2YgbWF0cml4IHguICgwPX5pbnYpCnNvbHZlKHgpCiN0cmFuc3Bvc2UKcHJpbnQoIjFzdCBtYXRyaXgiKQp0KHgpCnByaW50KCIybmQgbWF0cml4IikKdCh5KQojbXVsdGlwbGljYXRpb24KYSA9IHgqeQph
+#creating a Matrix
+x <- matrix(data = c(1,2,3,4,5,2), nrow = 3, ncol = 3) #byrow = TRUE)
+y <- matrix(data = c(2,3,4,9,3,1), nrow = 3, ncol = 3)
+#displaying the matrix
+x
+y
+#addition
+z = x+y
+z
+#inverse
+#determinants of matrix x
+det(x) 
+#determinants of matrix y
+det(y)
+#inverse of matrix x. (0=~inv)
+solve(x)
+#transpose
+print("1st matrix")
+t(x)
+print("2nd matrix")
+t(y)
+#multiplication
+a = x*y
+a
