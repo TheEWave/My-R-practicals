@@ -11,3 +11,4 @@ bs <- round(coef(fit), 3)
 lmlab <- paste0("mpg = ", bs[1],
                 ifelse(sign(bs[2])==1, " + ", " - "), abs(bs[2]), " wt ")
 mtext(lmlab, 3, line=-2) 
+print("HR")
