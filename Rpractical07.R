@@ -1,10 +1,21 @@
-#library(e1071)                    # load e1071 
-#library(moments)
-#duration = faithful$eruptions     # eruption durations 
-#skewness(duration)                # apply the skewness function 
-time <- c(19.09, 19.55, 17.89, 17.73, 25.15, 27.27, 25.24, 21.05, 21.65, 20.92, 22.61, 15.71, 22.04, 22.60, 24.25)
-
-library(moments)
-skewness(time)
-library(ggplot2)
-qplot(time, geom = 'histogram', binwidth = 2) + xlab('Time')
+#LOWER TAIL
+xbar = 9900            # sample mean 
+mu0 = 10000            # hypothesized value 
+sigma = 120            # population standard deviation 
+n = 30                 # sample size 
+z = (xbar???mu0)/(sigma/sqrt(n)) 
+z       
+#calculate critical value at .05
+alpha = .05 
+z.alpha = qnorm(1???alpha) 
+???z.alpha 
+#UPPER TAIL
+xbar = 2.1             # sample mean 
+mu0 = 2                # hypothesized value 
+sigma = 0.25           # population standard deviation 
+n = 35                 # sample size 
+z = (xbar???mu0)/(sigma/sqrt(n)) 
+z                      # test statistic 
+alpha = .05 
+z.alpha = qnorm(1???alpha) 
+z.alpha                # critical value 
